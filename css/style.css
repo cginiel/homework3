@@ -15,6 +15,7 @@ body{
   font-family: 'Andika', sans-serif;
   font-size: 16px;
   margin: 1.2em;
+  background: #DDD url("../images/pigeon-background.jpeg") no-repeat;
   background-size: cover ;
   background-position: center;
 }
@@ -51,26 +52,45 @@ a{
 }
 
 a:focus{
-  border: 2px;
-  border-color: #000;
+  border: 100px;
+  border-color: black;
+  /*FIGURE THIS OUT*/
 }
 
-table{
-    border: 2px solid black;
+table, th, td{
+    border-top: 2px solid black;
+    padding: 15px;
+    text-align: center;
 }
 
 .colhead{
   background-color: #7e0820;
   color: white;
+  min-width: 100px;
+  padding: 10px;
+  text-align: center;
+  text-transform: uppercase;
 }
 
-.rowhead{}
+.rowhead{
+  border-top: 2px solid black;
+}
+
 
 td{
   padding: 15px;
 }
 
-tr{}
+tbody tr:nth-child(odd){
+  background-color: #D1D1D1;
+}
+
+tbody tr:hover{
+  transition-property: background-color;
+  transition-duration: .5s;
+  transition-timing-function: linear, ease-in;
+  background-color: rgba(126,8,32, .5);
+}
 
 *{}
 
