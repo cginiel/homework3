@@ -66,7 +66,6 @@ TABLE
 table{
   margin: 0 auto;
   border: 2px solid black;
-  border-radius: 15px;
 }
 
 table, th, td{
@@ -108,19 +107,19 @@ tbody tr:hover{
 /*
 =========================================
 BORDER RADIUS
+think about descendant and child selectors
+https://learn.shayhowe.com/advanced-html-css/complex-selectors/
+
+also--commas are important for separating selectors
 =========================================
 */
-thead tr:first-child th:first-child{
+thead th:first-child{
   border-top-left-radius: 15px;
 }
 
-thead tr:last-child th:last-child{
+thead th:last-child{
   border-top-right-radius: 15px;
 }
-
-/*tbody tr:last-child th:first-child{
-  border-bottom-left-radius: 15px;
-}*/
 
 footer{
   position:fixed;
